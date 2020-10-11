@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Greet Improved</string>
+    <string name="app_namePerson">Name</string>
+    <string name="app_sirnamePerson">Sirname</string>
+    <string name="app_treat">Treatment</string>
+    <string name="main_rdbMs">Ms.</string>
+    <string name="main_rdbMrs">Mrs.</string>
+    <string name="main_rdbMr">Mr.</string>
+    <string name="politely">Politely</string>
+    <string name="premium">Premium</string>
+    <string name="resultPolitely">Good morning %1$s %2$s %3$s.\nPleased to meet you</string>
+    <string name="result">Hello %1$s %2$s. What\'s up?</string>
+    <string name="intents">0 of 10</string>
+    <string name="intentsOther">%1$d of 10</string>
+    <string name="tenIntents">Buy premium subscription to go in greeting!!</string>
+    <string name="invalid">Required</string>
 </resources>

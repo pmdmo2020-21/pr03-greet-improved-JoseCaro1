@@ -3,8 +3,137 @@
     android:id="@+id/llRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="@dimen/main_margin">
 
-    <!-- TODO -->
+
+    <Switch
+        android:id="@+id/swtPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/premium" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_namePerson" />
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/maxLength">
+
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/lblCharsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+
+        />
+
+
+    <TextView
+        android:id="@+id/lblSirName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_sirnamePerson"
+        />
+
+    <EditText
+        android:id="@+id/txtSirName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="18"
+        android:inputType="textPersonName"
+        android:maxLength="@integer/maxLength"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/lblCharsSirname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end" />
+
+    <TextView
+        android:id="@+id/lblTreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space"
+        android:text="@string/app_treat" />
+
+
+    <RadioGroup
+        android:id="@+id/rdgColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/main_margin">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mr" />
+
+        <RadioButton
+            android:id="@+id/rdbMr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/main_rdbMr" />
+
+        <RadioButton
+            android:id="@+id/rdbMrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_rdbMrs" />
+
+        <RadioButton
+            android:id="@+id/rdbMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_rdbMs" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkPolitely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/politely" />
+
+    <Button
+        android:id="@+id/btnGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/main_margin"
+        android:text="@string/app_name" />
+
+    <ProgressBar
+        android:id="@+id/barProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="10" />
+
+    <TextView
+        android:id="@+id/lblCountBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/intentsOther" />
+
 
 </LinearLayout>
